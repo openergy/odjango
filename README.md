@@ -1,2 +1,2 @@
-# odrf
-Django Rest Framework enhancements
+# odjango
+Django and Django Rest Framework enhancements

@@ -1,0 +1,18 @@
+{% extends "rest_framework/api_base.html" %}
+
+{% block documentation %}
+
+{% if documentation.description %}
+    <h4>Global</h4>
+    <pre>{{ documentation.description}}</pre>
+{% endif %}
+
+{% for path, path_info in documentation.paths.items %}
+    <h4><a href="{{ path_info.url }}">{{ path }}</a></h4>
+        {% for action_name, action_description in path_info.actions.items %}
+            <h5><b>{{ action_name }}</b></h5>
+            <pre>{{ action_description }}</pre>
+        {% endfor %}
+{% endfor %}
+
+{% endblock %}

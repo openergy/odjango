@@ -1,0 +1,5 @@
+django>=3,<4
+djangorestframework>=3,<4
+django-cors-headers>=3,<4
+djangorestframework_simplejwt>=4,<5
+pyjwt # pyjwt is not included in the requirements of simplejwt but must be installed
