@@ -3,3 +3,4 @@ djangorestframework>=3,<4
 django-cors-headers>=3,<4
 djangorestframework_simplejwt>=4,<5
 pyjwt # pyjwt is not included in the requirements of simplejwt but must be installed
+psycopg2>=2.7.1,<2.9  # https://stackoverflow.com/questions/68024060/assertionerror-database-connection-isnt-set-to-utc

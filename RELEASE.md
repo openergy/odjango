@@ -1,6 +1,7 @@
 # odjango
 
-## next
+## 1.0.2
+* p: psycopg2 requirements were added
 
 ## 1.0.1
 * p: django requirements were loosened
