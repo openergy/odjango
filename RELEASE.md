@@ -1,5 +1,7 @@
 # odjango
 
+## next
+
 ## 1.0.2
 * p: psycopg2 requirements were added
 
