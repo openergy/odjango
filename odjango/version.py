@@ -1,1 +1,1 @@
-version = "next"
+version = "1.0.2"
