@@ -1,5 +1,7 @@
 # odjango
 
+## next
+
 ## 1.1.0
 * m: PostgresqlDatabaseRetry was added
 
