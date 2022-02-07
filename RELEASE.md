@@ -1,6 +1,7 @@
 # odjango
 
-## next
+## 1.1.0
+* m: PostgresqlDatabaseRetry was added
 
 ## 1.0.2
 * p: psycopg2 requirements were added
