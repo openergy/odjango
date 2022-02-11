@@ -16,7 +16,7 @@ from rest_framework.utils import formatting
 
 header_regex = re.compile('^[a-zA-Z][0-9A-Za-z_]*:')
 
-from outil.rest_framework.viewset import STANDARD_ACTIONS
+from odjango.rest_framework.viewset import STANDARD_ACTIONS
 
 
 logger = logging.getLogger(__name__)
@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 class OAutoSchema(AutoSchema):
     """
-    add "DEFAULT_SCHEMA_CLASS": "outil.rest_framework.OAutoSchema" to REST_FRAMEWORK settings
+    add "DEFAULT_SCHEMA_CLASS": "odjango.rest_framework.OAutoSchema" to REST_FRAMEWORK settings
 
     doc_detail_route
     doc_list_route

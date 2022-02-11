@@ -1,6 +1,7 @@
 # odjango
 
-## next
+## 1.1.1
+* p: all outil imports were removed
 
 ## 1.1.0
 * m: PostgresqlDatabaseRetry was added

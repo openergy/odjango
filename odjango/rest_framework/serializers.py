@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from outil.django import NullableCharField as NullableCharModelField, NullableTextField as NullableTextModelField, \
+from odjango.django import NullableCharField as NullableCharModelField, NullableTextField as NullableTextModelField, \
     ScriptField as ScriptModelField
 
 

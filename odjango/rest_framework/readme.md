@@ -1,4 +1,4 @@
-# Outil rest framework package
+# Odjango rest framework package
 
 ## Documentation
 
@@ -10,14 +10,14 @@
 * To document a detail_route or list_route
     * put an action docstring
     * or in view docstring: "{action_name}: description" (will be overriden by docstring if any)
-    * for inputs, use doc_detail_route and doc_list_route (outil.rest_framework), and add doc=dict(serializer_class={SerializerClass}) in decorator kwargs
+    * for inputs, use doc_detail_route and doc_list_route (odjango.rest_framework), and add doc=dict(serializer_class={SerializerClass}) in decorator kwargs
     
     
 ### For developers of new apps
 
-**Add outil's rest_framework app**
+**Add odjango's rest_framework app**
 
-    "outil.rest_framework_app",
+    "odjango.rest_framework_app",
     
 *Must be declared before other rest_framework apps to override templates*
 
@@ -27,14 +27,14 @@ in "REST_FRAMEWORK" chapter:
 
     "DEFAULT_RENDERER_CLASSES": (
         'rest_framework.renderers.JSONRenderer',
-        'outil.rest_framework.BrowsableAPIRenderer'
+        'odjango.rest_framework.BrowsableAPIRenderer'
         )
 
 **Change schema class**
 
 in "REST_FRAMEWORK" chapter:
 
-    "DEFAULT_SCHEMA_CLASS": "outil.rest_framework.OAutoSchema"
+    "DEFAULT_SCHEMA_CLASS": "odjango.rest_framework.OAutoSchema"
 
 ### For framework developers
 
@@ -44,18 +44,18 @@ See: renderers.BrowsableAPIRenderer
 
 Uses: rest_framework_app static and template files
     
-    declare outil.rest_framework_app in django apps, BEFORE rest_framework (for template inheritance)
+    declare odjango.rest_framework_app in django apps, BEFORE rest_framework (for template inheritance)
         
     "DEFAULT_RENDERER_CLASSES": (
         'rest_framework.renderers.JSONRenderer',
-        'outil.rest_framework.BrowsableAPIRenderer'
+        'odjango.rest_framework.BrowsableAPIRenderer'
         )
 
 #### Auto schema generator was subclassed
 
 See inspectors.OAutoSchema
 
-add "DEFAULT_SCHEMA_CLASS": "outil.rest_framework.OAutoSchema" to REST_FRAMEWORK settings
+add "DEFAULT_SCHEMA_CLASS": "odjango.rest_framework.OAutoSchema" to REST_FRAMEWORK settings
 
 #### Api main view modified
 
@@ -67,7 +67,7 @@ viewset.get_api_main_view
 decorators.doc_detail_route
 decorators.doc_list_route
  
- #### New outil rest_framework app was created
+ #### New odjango rest_framework app was created
  
  Purpose : store templates and static files
  

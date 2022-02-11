@@ -1,6 +1,6 @@
 from contextlib import contextmanager
 
-from outil.exceptions import ClientResponseError
+from oclients import ClientResponseError
 from rest_framework.exceptions import APIException
 
 

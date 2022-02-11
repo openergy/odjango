@@ -9,16 +9,16 @@ from rest_framework.request import override_method
 from rest_framework.renderers import BrowsableAPIRenderer as RFBrowsableAPIRenderer
 from rest_framework.schemas.coreapi import SchemaGenerator
 
-from outil.django import build_base_path
+from odjango.django import build_base_path
 
 
 class BrowsableAPIRenderer(RFBrowsableAPIRenderer):
     """
-    declare outil.rest_framework_app in django apps, BEFORE rest_framework (for template inheritance)
+    declare odjango.rest_framework_app in django apps, BEFORE rest_framework (for template inheritance)
 
     "DEFAULT_RENDERER_CLASSES": (
         'rest_framework.renderers.JSONRenderer',
-        'outil.rest_framework.BrowsableAPIRenderer'
+        'odjango.rest_framework.BrowsableAPIRenderer'
         ),
     """
     describe_update = True  # will display partial updates and updates

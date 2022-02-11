@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django import __version__ as django_version
 
-from outil.django import build_absolute_path
+from odjango.django import build_absolute_path
 
 
 STANDARD_ACTIONS = ("create", "retrieve", "list", "update", "partial_update", "destroy")
