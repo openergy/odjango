@@ -8,3 +8,4 @@ jobs:
     uses: openergy/github-actions-workflows/.github/workflows/test-and-publish-package.yml@master
     secrets:
       AZURE_CONDA_CHANNEL_KEY: ${{ secrets.AZURE_CONDA_CHANNEL_KEY }}
+      CONDA_CHANNEL_SYSADMIN_URL: ${{ secrets.CONDA_CHANNEL_SYSADMIN_URL }}
