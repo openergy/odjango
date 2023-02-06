@@ -1,6 +1,7 @@
 # odjango
 
 ## next
+Add the folders inside rest_framework_app
 
 ## 1.1.1
 * p: all outil imports were removed
