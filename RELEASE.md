@@ -1,7 +1,7 @@
 # odjango
 
 ## next
-Add the folders inside rest_framework_app
+p: rest_framework_app folder was added in manifest to fix package build
 
 ## 1.1.1
 * p: all outil imports were removed
