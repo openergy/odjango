@@ -1,6 +1,7 @@
 # odjango
 
-## next
+## 1.1.3
+* p: browsable api content body is not visible anymore when user is not logged in
 
 ## 1.1.2
 * p: devops debug
