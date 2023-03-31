@@ -6,6 +6,8 @@ on:
 jobs:
   openergy:
     uses: openergy/ogithub-actions/.github/workflows/opypackage-standard-v02.yml@master
+    with:
+      python-conda-requirement: ">=3.6,<3.8"
     secrets:
       AZURE_CONDA_CHANNEL_KEY: ${{ secrets.AZURE_CONDA_CHANNEL_KEY }}
       CONDA_CHANNEL_SYSADMIN_URL: ${{ secrets.CONDA_CHANNEL_SYSADMIN_URL }}

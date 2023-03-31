@@ -1,6 +1,7 @@
 # odjango
 
-## next
+## 1.1.4
+* p: python version is expanded from 3.6 to 3.7
 
 ## 1.1.3
 * p: browsable api content body is not visible anymore when user is not logged in
